@@ -40,7 +40,10 @@
     };
     var dragging = false;
     el.addEventListener('pointerdown', function (e) {
-      dragging = true; el.setPointerCapture(e.pointerId); fromEvent(e);
+      dragging = true;
+      try { el.setPointerCapture(e.pointerId); } catch (err) { /* sem captura, o move ainda funciona */ }
+      fromEvent(e);
+      e.preventDefault();
     });
     el.addEventListener('pointermove', function (e) { if (dragging) fromEvent(e); });
     el.addEventListener('pointerup', function () { dragging = false; });

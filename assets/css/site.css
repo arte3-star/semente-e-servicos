@@ -126,6 +126,11 @@
 .ba__tag--l { left: 14px; }
 .ba__tag--r { right: 14px; }
 
+/* Os filhos nao podem capturar o ponteiro: a foto dispararia o arrasto
+   nativo de imagem do navegador e engoliria o gesto do comparador. */
+.ba__layer, .ba__layer .ph, .ba__layer img,
+.ba__handle, .ba__grip, .ba__tag { pointer-events: none; -webkit-user-drag: none; user-select: none; }
+
 .ba-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
 @media (max-width: 800px) { .ba-grid { grid-template-columns: 1fr; } }
 
