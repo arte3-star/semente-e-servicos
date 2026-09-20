@@ -251,3 +251,8 @@
 .nav__logo img { height: 42px; width: auto; }
 .foot__logo { height: 76px; width: auto; margin-bottom: 16px; }
 @media (max-width: 560px) { .nav__logo img { height: 34px; } }
+
+/* seis valores: 3 por linha no desktop, 2 no tablet, 1 no celular */
+.princ--6 { row-gap: 36px; }
+.princ--6 .princ__item h3 { font-size: 19px; margin-bottom: 9px; }
+@media (max-width: 1000px) and (min-width: 801px) { .princ--6 { grid-template-columns: repeat(2, 1fr); } }
