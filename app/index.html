@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plataforma Semente — demonstração</title>
+<meta name="description" content="Demonstração da plataforma de comprovação de serviços da Semente e Serviços: app da equipe, portal do dono e painel da coordenação.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+<div class="demo">
+
+  <aside class="rail">
+    <a class="rail__brand" href="../index.html">
+      <span class="rail__mark">S</span>
+      <span>Plataforma Semente<small>demonstração</small></span>
+    </a>
+
+    <div class="rail__cols">
+      <div>
+        <p class="rail__group">App da equipe · celular</p>
+        <a class="rail__item" href="#agenda"><i>▦</i> Agenda do dia</a>
+        <a class="rail__item" href="#checklist"><i>☑</i> Checklist da visita</a>
+        <a class="rail__item" href="#camera"><i>◉</i> Antes e depois</a>
+        <a class="rail__item" href="#finalizar"><i>✎</i> Finalizar e assinar</a>
+        <a class="rail__item" href="#extra"><i>+</i> Sugerir extra</a>
+        <a class="rail__item" href="#offline"><i>⇅</i> Dia que dá errado</a>
+        <a class="rail__item" href="#funcionario"><i>☺</i> Área do funcionário</a>
+      </div>
+
+      <div>
+        <p class="rail__group">Portal do dono</p>
+        <a class="rail__item" href="#casa"><i>⌂</i> Minha casa</a>
+        <a class="rail__item" href="#relatorio"><i>▤</i> Relatório da visita</a>
+        <a class="rail__item" href="#historico"><i>◷</i> Histórico</a>
+        <a class="rail__item" href="#cumprimento"><i>✓</i> Cumprimento do plano</a>
+        <a class="rail__item" href="#plano"><i>◈</i> Meu plano</a>
+        <a class="rail__item" href="#faturas"><i>₪</i> Faturas</a>
+        <a class="rail__item" href="#pix"><i>⚡</i> Pagar com Pix</a>
+      </div>
+
+      <div>
+        <p class="rail__group">Coordenação</p>
+        <a class="rail__item" href="#aovivo"><i>◉</i> Equipes ao vivo</a>
+        <a class="rail__item" href="#financeiro"><i>₪</i> Recebimentos</a>
+        <a class="rail__item" href="#risco"><i>⚠</i> Risco de cancelamento</a>
+        <a class="rail__item" href="#onboarding"><i>→</i> Onboarding</a>
+        <a class="rail__item" href="#tecnica"><i>⟂</i> Visita técnica</a>
+      </div>
+
+      <div>
+        <p class="rail__group">Documentos</p>
+        <a class="rail__item" href="#doc-relatorio"><i>▤</i> Relatório em PDF</a>
+        <a class="rail__item" href="#doc-recibo"><i>▤</i> Recibo e nota fiscal</a>
+        <a class="rail__item" href="#doc-proposta"><i>▤</i> Proposta com aceite</a>
+        <a class="rail__item" href="#doc-metragem"><i>▤</i> Cartão de metragem</a>
+      </div>
+    </div>
+
+    <div class="rail__note">
+      Demonstração navegável. Os dados ficam no seu navegador e não saem daqui.
+      <br><br>
+      <a href="#" data-reset>Recomeçar a demonstração</a> · <a href="../index.html">voltar ao site</a>
+    </div>
+  </aside>
+
+  <main class="stage" id="stage"></main>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="app.js"></script>
+</body>
+</html>

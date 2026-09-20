@@ -1,0 +1,95 @@
+/* Semente e Serviços — tokens de marca
+   Extraídos dos mockups de design (Claude Design): fundo creme, verde escuro,
+   verde-sálvia e terracota, tipografia Jost. */
+
+:root {
+  /* cor */
+  --cream:        #E8E4D8;
+  --cream-deep:   #DCD6C6;
+  --green:        #2B5138;
+  --green-soft:   #3C6B4B;
+  --sage:         #7E9C73;
+  --sage-pale:    #A8BD9E;
+  --terra:        #8C4A26;
+  --terra-soft:   #B06A42;
+
+  --ink:          #1E2A21;
+  --ink-2:        #4A5A4F;
+  --ink-3:        #78877C;
+  --line:         #CFC8B6;
+  --line-soft:    #E2DCCD;
+  --paper:        #FFFFFF;
+  --paper-warm:   #FBF9F3;
+
+  --ok:           #3C6B4B;
+  --warn:         #B07A22;
+  --danger:       #A33B29;
+  --info:         #2F5E7A;
+
+  /* tipografia */
+  --font: 'Jost', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  /* medidas */
+  --r-sm: 6px;
+  --r:    10px;
+  --r-lg: 16px;
+  --r-xl: 24px;
+
+  --shadow-sm: 0 1px 2px rgba(30,42,33,.06), 0 1px 3px rgba(30,42,33,.05);
+  --shadow:    0 2px 8px rgba(30,42,33,.07), 0 8px 24px rgba(30,42,33,.06);
+  --shadow-lg: 0 8px 24px rgba(30,42,33,.10), 0 24px 56px rgba(30,42,33,.10);
+
+  --wrap: 1180px;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  font-weight: 400;
+  color: var(--ink);
+  background: var(--cream);
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 { margin: 0; font-weight: 500; line-height: 1.15; letter-spacing: -.015em; }
+p { margin: 0; }
+a { color: inherit; }
+img { max-width: 100%; display: block; }
+button, input, select, textarea { font: inherit; color: inherit; }
+
+.wrap { width: 100%; max-width: var(--wrap); margin-inline: auto; padding-inline: 24px; }
+
+/* Foto com degradê de reserva: se o arquivo ainda não existe, o bloco
+   continua legível em vez de mostrar ícone de imagem quebrada. */
+.ph {
+  position: relative;
+  overflow: hidden;
+  background:
+    linear-gradient(135deg, var(--sage) 0%, var(--green) 55%, #24412D 100%);
+}
+.ph > img {
+  width: 100%; height: 100%; object-fit: cover; display: block;
+  position: relative; z-index: 1;
+}
+.ph > img[data-fallback] { opacity: 0; }
+.ph::after {
+  content: attr(data-label);
+  position: absolute; inset: 0; z-index: 0;
+  display: flex; align-items: center; justify-content: center;
+  padding: 16px; text-align: center;
+  font-size: 13px; letter-spacing: .08em; text-transform: uppercase;
+  color: rgba(255,255,255,.72);
+}
+
+.sr { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; border:0; }
+
+:focus-visible { outline: 2px solid var(--terra); outline-offset: 2px; border-radius: 3px; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration:.01ms !important; animation-iteration-count:1 !important; transition-duration:.01ms !important; scroll-behavior:auto !important; }
+}
