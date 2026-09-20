@@ -241,3 +241,8 @@
 .tags { display: flex; flex-wrap: wrap; gap: 8px; }
 .tag { background: rgba(126,156,115,.16); color: var(--green); border-radius: 999px; padding: 5px 14px; font-size: 13.5px; }
 @media (max-width: 760px) { .svc { grid-template-columns: 1fr; gap: 12px; } }
+
+/* ---------- logotipo ---------- */
+.nav__logo img { height: 42px; width: auto; }
+.foot__logo { height: 76px; width: auto; margin-bottom: 16px; }
+@media (max-width: 560px) { .nav__logo img { height: 34px; } }

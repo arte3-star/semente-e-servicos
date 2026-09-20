@@ -5,7 +5,7 @@ empresa de manutenção de jardins e piscinas em São Paulo.
 
 Implementado a partir dos mockups do projeto Claude Design
 *"UI mockups for Semente e Serviços"* (`Site Semente e Servicos.dc.html` e
-`Plataforma Semente.dc.html`).
+`Plataforma Semente.dc.html`) — os mockups são a referência de construção.
 
 **No ar:** https://arte3-star.github.io/semente-e-servicos/
 
@@ -73,21 +73,22 @@ Depois abra `http://127.0.0.1:8850/`. Não há build, dependências nem backend 
 
 ## Imagens
 
-As fotos ficam em `assets/img/` e **ainda não estão no repositório** — elas vivem no
-projeto do Claude Design e dependem de uma autorização (`/design-login`) que não pôde
-ser concluída na sessão em que este código foi escrito.
+As fotos estão em `assets/img/` e a logo em `assets/logo/`.
 
-Enquanto os arquivos não chegam, cada `.ph` mostra um degradê da marca com o rótulo
-da foto, então nada aparece quebrado. Basta soltar os arquivos com estes nomes para
-as fotos entrarem no lugar:
+São **imagens de modelo**, geradas por IA, usadas como andaime visual enquanto não
+houver foto real de trabalho — a mesma decisão já registrada no material da marca.
+Quando as fotos reais chegarem, basta substituir os arquivos mantendo os nomes.
 
 ```
-assets/img/fachada-casa.jpg
-assets/img/jardim-antes.jpg      assets/img/jardim-depois.jpg
-assets/img/piscina-antes.jpg     assets/img/piscina-depois.jpg
-assets/img/equipe-poda.jpg       assets/img/equipe-piscina.jpg
-assets/img/logo-horizontal.png
+assets/img/    fachada-casa · jardim-antes/depois · piscina-antes/depois
+               equipe-poda · equipe-piscina · equipe-chegada
+               jardim-detalhe · piscina-detalhe · regiao-condominio · topo-jardim
+assets/logo/   logo-horizontal (png/svg) · logo-vertical · logo-vertical-clara
+               logo-simbolo · favicon-16/32/180/512
 ```
+
+Se uma imagem faltar, o bloco `.ph` cai num degradê da marca com o rótulo da foto,
+então nada aparece quebrado.
 
 ## Marca
 

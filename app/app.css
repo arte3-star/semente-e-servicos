@@ -18,6 +18,7 @@ body { background: var(--cream); }
   position: sticky; top: 0; height: 100vh; overflow-y: auto;
 }
 .rail__brand { display: flex; align-items: center; gap: 10px; padding: 0 22px 20px; text-decoration: none; }
+.rail__logo { height: 52px; width: auto; }
 .rail__mark { width: 32px; height: 32px; border-radius: 50%; background: #fff; color: var(--green); display: grid; place-items: center; font-weight: 500; }
 .rail__brand span { color: #fff; font-size: 15px; line-height: 1.15; }
 .rail__brand small { display: block; font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; color: rgba(255,255,255,.55); }

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 72" width="320" height="72" role="img" aria-label="Semente e Serviços">
+  <title>Semente e Serviços</title>
+  <g transform="translate(2 6) scale(0.92)"><path fill="#1F4D36" fill-rule="evenodd" d="M32 4.2 60 27.2V51a7 7 0 0 1-7 7H11a7 7 0 0 1-7-7V27.2L32 4.2Z M32 16.4c-1.6 3.4-4.2 6.6-6.6 9.6-2.9 3.6-4.9 7.4-4.9 11.6a11.5 11.5 0 0 0 8.3 11c-.9 3.4-4.3 5.4-10 5.9v3.1h26.4v-3.1c-5.7-.5-9.1-2.5-10-5.9a11.5 11.5 0 0 0 8.3-11c0-4.2-2-8-4.9-11.6-2.4-3-5-6.2-6.6-9.6Z"/></g>
+  <text x="76" y="35" font-family="Lora, Georgia, 'Times New Roman', serif" font-size="30" font-weight="500" fill="#8B5E3C" letter-spacing="-0.3">Semente</text>
+  <text x="77" y="58" font-family="Montserrat, 'Segoe UI', Arial, sans-serif" font-size="17" letter-spacing="0.4"><tspan fill="#2F3E2E">e </tspan><tspan fill="#1F4D36" font-weight="700">SER</tspan><tspan fill="#2F3E2E">viços</tspan></text>
+</svg>
